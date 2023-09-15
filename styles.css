@@ -1,1 +1,57 @@
-
+.container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gird-template-rows: 1fr 1fr;
+	gap: 10px 20px;
+	grid-template-areas: 
+		"img my-details about-me about-me"
+		"skills-set skills-set about-me about-me";
+}
+img{
+	width: 150px;
+	grid-area: img;
+}
+h4{
+	display: inline;
+}
+.my-details{
+	line-height: 20px;
+	grid-area: my-details;
+}
+.skills-set{
+	grid-area: skills-set;
+}
+.skills-list{
+	display: flex;
+	justify-content: space-between;
+}
+.percentage-bar{
+	line-height: 0px;
+}
+.bar-1{
+	width: 100%;
+	border: 3px solid lightblue;
+}
+.bar-21{
+	width: 95%;
+	border: 3px solid blue;
+	margin-top: -4px;
+}
+.bar-22{
+	width: 90%;
+	border: 3px solid blue;
+	margin-top: -4px;
+}
+.bar-23{
+	width: 99%;
+	border: 3px solid blue;
+	margin-top: -4px;
+}
+.bar-24{
+	width: 93%;
+	border: 3px solid blue;
+	margin-top: -4px;
+}
+.about-me{ 
+	grid-area: about-me; 
+}
